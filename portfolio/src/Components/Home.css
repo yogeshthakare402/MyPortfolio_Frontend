@@ -1,0 +1,77 @@
+#homeInfo{
+    width: 100%;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.info{
+    margin-right: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.name{
+    color: rgb(255, 119, 0);
+}
+#para{
+    margin-top: 20px;
+    font-size: x-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1, h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#btn{
+    margin-top: 100px;
+    padding: 20px 30px;
+    font-size: x-large;
+    border-radius: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: orange;
+    color: white;
+}
+.aboutPage{
+    color: white;
+    text-decoration: none;
+}
+#btn:hover{
+    box-shadow: 0px 0px 10px 2px rgb(245, 193, 96);
+}
+
+#passport{
+    position: relative;
+}
+#upper{
+    width: 200px;
+    height: 200px;
+    /* background-color: blueviolet; */
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    border-top: 5px solid orange;
+    border-left: 5px solid orange;
+    border-radius: 10px;
+    z-index: 1;
+}
+#lower{
+    width: 200px;
+    height: 200px;
+    /* background-color: blueviolet; */
+    position: absolute;
+    bottom: -10px;
+    right: -15px;
+    border-bottom: 5px solid orange;
+    border-right: 5px solid orange;
+    border-radius: 10px;
+    z-index: 2;
+}
+img{
+    z-index: 3;
+}
+#passport img{
+    border-radius: 10px;
+}

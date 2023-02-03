@@ -1,0 +1,241 @@
+#about{
+    width: 100%;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* overflow-y: scroll; */
+}
+.about{
+    width: 100%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+#infoPara{
+    margin-top: 40px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+#head{
+    margin-top: 30px;
+}
+#head h1{
+    font-size: xx-large;
+    margin: 0px;
+}
+#firstChild{
+    margin-top: 2px;
+    width: 70px;
+    height: 3px;
+    background-color: orange;
+}
+#secondChild{
+    margin-top: 2px;
+    width: 45px;
+    height: 3px;
+    background-color: orange;
+}
+.name{
+    color: orange;
+}
+.para{
+    font-size: x-large;
+    text-align: start;
+    flex-wrap: wrap;
+}
+.aboutSkills{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+}
+.list{
+    margin-top: 50px;
+    width: 50%;
+    text-align: start;
+    align-items: flex-start;
+    font-size: large;
+}
+.list ul{
+    width: 50%;
+}
+.list ul li{
+    list-style: none;
+}
+.listData{
+    margin-right: 10px;
+    font-size: larger;
+    font-weight: bold;
+}
+#rangelist{
+    margin-top: 50px;
+    width: 30%;
+}
+
+.rangeList{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-size: larger;
+}
+.rangeCss{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+label{
+    margin: 0px;
+}
+.rangeList .container{
+    margin-top: 0;
+    width: 100%;
+    height: 10px;
+    background-color: rgb(181, 179, 179);
+}
+#javascript{
+    width: 50%;
+    height: 10px;
+    background-color: orange;
+}
+#html{
+    width: 50%;
+    height: 10px;
+    background-color: orange;
+}
+#css{
+    width: 50%;
+    height: 10px;
+    background-color: orange;
+}
+#react{
+    width: 50%;
+    height: 10px;
+    background-color: orange;
+}
+#node{
+    width: 50%;
+    height: 10px;
+    background-color: orange;
+}
+#mongo{
+    width: 50%;
+    height: 10px;
+    background-color: orange;
+}
+
+/* Education and Experience */
+.eduExp{
+    margin: 100px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    
+}
+.education{
+    padding-bottom: 50px;
+    margin-left: 50px;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: rgb(242, 206, 164);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px bisque;
+}
+#degree,#diploma,#hsc,#ssc{
+    margin: 10px 0 10px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    color: black;
+}
+.education h2{
+    margin-left: 50px;
+    color: black;
+}
+.line{
+    width: 100%;
+    height: 5px;
+    background-color: rgb(231, 162, 12);
+}
+h3,h4,h5{
+    margin: 0;
+}
+.experience{
+    margin-left: 50px;
+    padding-bottom: 50px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    align-items: flex-start;
+    justify-content: center;
+    background-color: rgb(242, 206, 164);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px bisque;
+    color: black;
+}
+.exp{
+    margin-top: 10px;
+    margin-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+}
+.exp p{
+    width: 100%;
+    height: fit-content;
+    text-align: start;
+}
+.experience h2{
+    margin-left: 50px;
+    color: black;
+}
+.certificates{
+    width: 100%;
+    margin: 50px;
+}
+#certiHead{
+    margin-bottom: 50px;
+    width: 100%;
+    height: 50px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#certiHead h2{
+    width: 50%;
+    height: 50px;
+    font-size: xx-large;
+    background-color: antiquewhite;
+    border-radius: 50px;
+}
+.certi img{
+    margin-top: 10px;
+    width: 1000px;
+    height: 700px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 10px bisque;
+}
