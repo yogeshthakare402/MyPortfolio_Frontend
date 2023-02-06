@@ -54,16 +54,17 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    gap: 40px;
 }
 .card{
-    width: 100%; 
+    width: 40%; 
     height: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .card img {
@@ -72,4 +73,9 @@
     height: 400px;
     border: 2px solid burlywood;
     box-shadow: 0px 0px 10px 5px bisque;
+}
+
+.links{
+    text-decoration: none;
+    color: white;
 }

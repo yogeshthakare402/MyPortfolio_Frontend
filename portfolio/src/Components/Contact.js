@@ -1,10 +1,26 @@
-import React from 'react';
+import React, {useRef } from 'react';
 import { FaPhone } from 'react-icons/fa'
 import { MdEmail } from 'react-icons/md'
 import CommonPage from './CommonPage';
-import './Contact.css'
+import './Contact.css';
+import emailjs from '@emailjs/browser';
 
 function Contact() {
+
+  const form = useRef();
+
+  const sendEmail = (e)=>{
+    e.preventDefault();
+    
+    emailjs.sendForm('service_r7rsqwu', 'template_dh7hm3h', form.current, 'FajtIl2FY0W-Kagl1')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+
+      e.target.reset();
+  }
   return (
     <CommonPage>
       <div id="contact">
@@ -36,14 +52,15 @@ function Contact() {
           <h4>I'M VERY RESPONSIVE TO MESSAGES</h4>
         </div>
         <div className='messageForm'>
-          <form action="">
+          <form ref={form} onSubmit={sendEmail}>
             <div className='firstinput'>
-            <input type="text" name="name" id="name" placeholder='Name' required/>
-            <input type="email" name="email" id="email" placeholder='Email' required/>
+            <input type="text" name="user_name" id="user_name" placeholder='Name' required/>
+            <input type="email" name="user_email" id="user_email" placeholder='Email' required/>
             </div>
             <input type="text" name="subject" id="subject" placeholder='Subject' required/>
-            <textarea name="message" id="message" cols="30" rows="10" placeholder='Message'>Message</textarea>
-            <button id='msgbtn'>Send Message</button>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder='Message'></textarea>
+            
+            <button id='msgbtn'>Click to Send an Email</button>
           </form>
         </div>
       </div>
