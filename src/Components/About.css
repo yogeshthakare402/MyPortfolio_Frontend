@@ -70,7 +70,7 @@
 .list ul li{
     list-style: none;
 }
-#gitLink{
+.gitLink{
     text-decoration: none;
     color: white;
 }

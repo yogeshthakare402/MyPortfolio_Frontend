@@ -41,10 +41,10 @@ function About() {
                             <hr />
                             <li><span className='listData'>City:</span> Mumbai</li>
                             <hr />
-                            <li><span className='listData'>GitHub:</span><Link id='gitLink' to="https://github.com/yogeshthakare402" target="_blank">https://github.com/yogeshthakare402</Link> </li>
+                            <li><span className='listData'>GitHub:</span><Link className='gitLink' to="https://github.com/yogeshthakare402" target="_blank">https://github.com/yogeshthakare402</Link> </li>
                             <hr />
 
-                            <button id='btn'><a href={cvurl} download={filename}>Download Resume</a> </button>
+                            <button id='btn'><a className='gitLink' href={cvurl} download={filename}>Download Resume</a> </button>
                         </ul>
                     </div>
                     <div id='rangelist'>
