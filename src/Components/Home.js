@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import CommonPage from './CommonPage';
 
 function Home() {
-    console.log("hello")
+    console.log("hello");
 
 return (
     <CommonPage>
@@ -15,7 +15,7 @@ return (
                 <div id='para'>I'm Full Stack Developer with extensive experience for over 1 Years. <br />
                     My expertise is to create Frontend app and Backend api to make page responsive
                 </div>
-                <button id='btn'><Link to={"/about"} className='aboutPage'>More about me</Link></button>
+                <button id='btn'><Link to={"/about"} className='aboutPage'>More about me</Link></button> 
             </div>
             <div id='passport'>
                 <div id='upper'></div>

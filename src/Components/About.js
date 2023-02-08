@@ -4,7 +4,11 @@ import './About.css';
 import {Link} from 'react-router-dom';
 
 function About() {
-    console.log("hi")
+    console.log("hi");
+    let cvurl = 'https://yogesh-d-thakare-portfolio.netlify.app/Yogesh_Devidas_Thakare-V7-2023.pdf';
+    // let cvurl = 'http://localhost:3000/Yogesh_Devidas_Thakare-V7-2023.pdf'
+    const filename = cvurl.split("/").pop()
+    
     return (
         <CommonPage>
             <div id="about">
@@ -39,6 +43,8 @@ function About() {
                             <hr />
                             <li><span className='listData'>GitHub:</span><Link id='gitLink' to="https://github.com/yogeshthakare402" target="_blank">https://github.com/yogeshthakare402</Link> </li>
                             <hr />
+
+                            <button id='btn'><a href={cvurl} download={filename}>Download Resume</a> </button>
                         </ul>
                     </div>
                     <div id='rangelist'>
