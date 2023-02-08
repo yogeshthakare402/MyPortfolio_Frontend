@@ -58,6 +58,7 @@
     gap: 40px;
 }
 .card{
+    margin-bottom: 20px;
     width: 40%; 
     height: 100%;
     display: flex;

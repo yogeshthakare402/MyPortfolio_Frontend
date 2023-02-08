@@ -22,25 +22,25 @@ function Portfolio() {
           <div id='card'>
             <div className='card'>
               <Link className='links' to={"https://reale-estate-app.netlify.app/"} target={"_blank"}>
-                <img id='realestate' src={window.location.origin + '/realestate.png'} alt="realestate" onClick={console.log("hello")} />
+                <img id='realestate' src={window.location.origin + '/realestate.png'} alt="realestate" />
                 <h3>Real Estate Project</h3>
               </Link>
             </div>
-            
+
 
             <div className='card'>
-            <Link className='links' to={"https://shopping-cart-yt.netlify.app/"} target={"_blank"}>
-              <img id='shoppingcart' src={window.location.origin + '/Shopping_Cart.png'} alt="shoppingCart" onClick={console.log("hello")} />
-              <h3>Shopping Cart</h3>
+              <Link className='links' to={"https://shopping-cart-yt.netlify.app/"} target={"_blank"}>
+                <img id='shoppingcart' src={window.location.origin + '/Shopping_Cart.png'} alt="shoppingCart" />
+                <h3>Shopping Cart</h3>
               </Link>
             </div>
 
-            {/* <div className='card'>
-            <img id='shoppingcart' src={window.location.origin + '/Shopping_Cart.png'} alt="shoppingCart" onClick={console.log("hello")}/>
-            <h3>Shopping Cart</h3>
+            <div className='card'>
+              <img id='instaclone' src={window.location.origin + '/Instaclone.png'} alt="instaclone" />
+              <h3>Instaclone</h3>
             </div>
 
-            <div className='card'>
+            {/* <div className='card'>
             <img id='shoppingcart' src={window.location.origin + '/Shopping_Cart.png'} alt="shoppingCart" onClick={console.log("hello")}/>
             <h3>Shopping Cart</h3>
             </div> */}

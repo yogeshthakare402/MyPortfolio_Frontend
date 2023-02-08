@@ -70,6 +70,10 @@
 .list ul li{
     list-style: none;
 }
+#gitLink{
+    text-decoration: none;
+    color: white;
+}
 .listData{
     margin-right: 10px;
     font-size: larger;

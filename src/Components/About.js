@@ -1,6 +1,7 @@
 import React from 'react';
 import CommonPage from './CommonPage';
-import './About.css'
+import './About.css';
+import {Link} from 'react-router-dom';
 
 function About() {
     console.log("hi")
@@ -35,6 +36,8 @@ function About() {
                             <li><span className='listData'>Phone:</span> 8830226189 / 7798871276</li>
                             <hr />
                             <li><span className='listData'>City:</span> Mumbai</li>
+                            <hr />
+                            <li><span className='listData'>GitHub:</span><Link id='gitLink' to="https://github.com/yogeshthakare402" target="_blank">https://github.com/yogeshthakare402</Link> </li>
                             <hr />
                         </ul>
                     </div>
