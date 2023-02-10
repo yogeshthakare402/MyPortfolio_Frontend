@@ -296,7 +296,7 @@ h3,h4,h5{
         display: flex;
         flex-wrap: wrap;
         text-align: center;
-        background-color: aqua;
+        /* background-color: aqua; */
     }
     .list{
         width: 100%;
