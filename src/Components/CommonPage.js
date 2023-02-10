@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import './CommonPage.css';
 import { Link } from 'react-router-dom';
 import { MdHome, MdPerson, MdContacts, MdOutlineMenuBook, MdMenu } from 'react-icons/md';
