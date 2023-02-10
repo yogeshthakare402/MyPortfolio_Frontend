@@ -8,9 +8,9 @@ function CommonPage({ children }) {
     const ChangeColor = () => {
         // console.log(window.location)
         
-        // let url ="https://yogesh-d-thakare-portfolio.netlify.app/about"
-        let url = "http://localhost:3000/about"
-        
+        let url ="https://yogesh-d-thakare-portfolio.netlify.app/about"
+        // let url = "http://localhost:3000/about"
+
         if (window.location.href === url) {
             return "activeMenu"
         } else {
