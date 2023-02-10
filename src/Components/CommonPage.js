@@ -1,17 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './CommonPage.css';
 import { Link } from 'react-router-dom';
 import { MdHome, MdPerson, MdContacts, MdOutlineMenuBook, MdMenu } from 'react-icons/md';
 
 function CommonPage({ children }) {
 
-    const changeColor = () => {
-        if (window.location.href === "http://localhost:3000/about") {
-            return <div><Link to={"/about"} className='menuListFocus'>About Me</Link></div>
+    const ChangeColor = () => {
+        // console.log(window.location)
+        
+        // let url ="https://yogesh-d-thakare-portfolio.netlify.app/about"
+        let url = "http://localhost:3000/about"
+        
+        if (window.location.href === url) {
+            return "activeMenu"
         } else {
-            return <div><Link to={"/about"} className='menuList'>About Me</Link></div>
+            return "selectMenu"
         }
     }
+        
+    
     return (
         <section id='commonPage'>
             <div id='asideLeft'>
@@ -22,27 +29,26 @@ function CommonPage({ children }) {
 
 
                 <div className='menu'>
-                    <div className='selectMenu'>
+                    <Link to={"/"} className='selectMenu'>
                         <div ><MdHome className='icon' /></div>
-                        <div><Link to={"/"} className='menuList'>Home</Link></div>
-                    </div>
-
-                    <div className='selectMenu'>
+                        <div>Home</div>
+                    </Link>
+                    <Link to={"/about"} className={ChangeColor()}>
                         <div><MdPerson className='icon' /></div>
-                        {changeColor()}
-                    </div>
-                    <div className='selectMenu'>
+                        <div>About Me</div>
+                    </Link>
+                    <Link to={"/services"} className='selectMenu'>
                         <div><MdMenu className='icon' /></div>
-                        <div ><Link to={"/services"} className='menuList'>Services</Link></div>
-                    </div>
-                    <div className='selectMenu'>
+                        <div >Services</div>
+                    </Link>
+                    <Link to={"/portfolio"} className='selectMenu'>
                         <div><MdOutlineMenuBook className='icon' /></div>
-                        <div ><Link to={"/portfolio"} className='menuList'>Portfolio</Link></div>
-                    </div>
-                    <div className='selectMenu'>
+                        <div >Portfolio</div>
+                    </Link>
+                    <Link to={"/contact"} className='selectMenu'>
                         <div><MdContacts className='icon' /></div>
-                        <div ><Link to={"/contact"} className='menuList'>Contact</Link></div>
-                    </div>
+                        <div >Contact</div>
+                    </Link>
                 </div>
             </div>
             <div id='asideRight'>

@@ -9,6 +9,11 @@ function Home() {
 return (
     <CommonPage>
         <div id='homeInfo'>
+        <div id='passport'>
+                <div id='upper'></div>
+                <div id='lower'></div>
+                <img src={window.location.origin + '/Yogesh_Thakare.png'} alt="passport" />
+            </div>
             <div className='info'>
                 <h1>Hello, my name is <space className='name'> Yogesh Thakare</space></h1>
                 <h2>I am a <space className='name'>Full Stack Developer</space></h2>
@@ -17,11 +22,7 @@ return (
                 </div>
                 <button id='btn'><Link to={"/about"} className='aboutPage'>More about me</Link></button> 
             </div>
-            <div id='passport'>
-                <div id='upper'></div>
-                <div id='lower'></div>
-                <img src={window.location.origin + '/Yogesh_Thakare.png'} alt="passport" />
-            </div>
+           
         </div>
     </CommonPage>
 

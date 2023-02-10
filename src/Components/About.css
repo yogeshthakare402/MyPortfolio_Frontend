@@ -149,7 +149,7 @@ label{
 }
 .education{
     padding-bottom: 50px;
-    margin-left: 50px;
+    margin-left: 5%;
     width: 30%;
     display: flex;
     flex-direction: column;
@@ -159,7 +159,7 @@ label{
     border-radius: 10px;
     box-shadow: 0px 0px 10px 5px bisque;
 }
-#degree,#diploma,#hsc,#ssc{
+.degree{
     margin: 10px 0 10px 50px;
     display: flex;
     flex-direction: column;
@@ -181,7 +181,7 @@ h3,h4,h5{
     margin: 0;
 }
 .experience{
-    margin-left: 50px;
+    margin-left: 5%;
     padding-bottom: 50px;
     width: 50%;
     display: flex;
@@ -196,9 +196,9 @@ h3,h4,h5{
 }
 .exp{
     margin-top: 10px;
-    margin-left: 50px;
+    margin-left: 5%;
     padding-right: 50px;
-    width: 100%;
+    width: 90%;
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -208,9 +208,11 @@ h3,h4,h5{
     gap: 10px;
 }
 .exp p{
+    box-sizing: border-box;
     width: 100%;
     height: fit-content;
     text-align: start;
+    /* background-color: aqua; */
 }
 .experience h2{
     margin-left: 50px;
@@ -238,8 +240,72 @@ h3,h4,h5{
 }
 .certi img{
     margin-top: 10px;
-    width: 1000px;
-    height: 700px;
+    width: 80%;
+    height: 100%;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 10px bisque;
+}
+
+@media screen and (max-width:1000px){
+    #about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        /* overflow-y: scroll; */
+    }
+    .para{
+        margin-right: 2%;
+        display: flex;
+        flex-wrap: wrap;
+        font-size: small;
+    }
+    .aboutSkills{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+    #rangelist{
+        width: 50%;
+        margin-left: 5%;
+    }
+    .eduExp{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+        gap: 50px;
+    }
+    .education,.experience{
+        /* margin-left: 0; */
+        width: 80%;
+    }
+    .degree{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .exp{
+        margin-left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .exp p{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        background-color: aqua;
+    }
+    .list{
+        width: 100%;
+        font-size: large;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .listData{
+        font-size: large;
+    }
 }
