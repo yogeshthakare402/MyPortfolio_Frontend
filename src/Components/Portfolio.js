@@ -36,14 +36,18 @@ function Portfolio() {
             </div>
 
             <div className='card'>
-              <img id='instaclone' src={window.location.origin + '/Instaclone.png'} alt="instaclone" />
-              <h3>Instaclone</h3>
+              <Link className='links' to={"https://recipeapp-yogesh.netlify.app/"} target={"_blank"}>
+                <img id='recipeApp' src={window.location.origin + '/Recipe_App.png'} alt="RecipeApp" />
+                <h3>Recipe App</h3>
+              </Link>
             </div>
 
-            {/* <div className='card'>
-            <img id='shoppingcart' src={window.location.origin + '/Shopping_Cart.png'} alt="shoppingCart" onClick={console.log("hello")}/>
-            <h3>Shopping Cart</h3>
-            </div> */}
+            <div className='card'>
+              <Link className='links' to={"https://shopping-cart-yt.netlify.app/"} target={"_blank"}>
+                <img id='instaclone' src={window.location.origin + '/Instaclone.png'} alt="instaclone" />
+                <h3>Instaclone</h3>
+              </Link>
+            </div>
 
           </div>
         </div>
