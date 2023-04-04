@@ -43,11 +43,19 @@ function Portfolio() {
             </div>
 
             <div className='card'>
+              <Link className='links' to={"https://gallery-app-yogesh.netlify.app/"} target={"_blank"}>
+                <img id='galleryApp' src={window.location.origin + '/Gallery_App.png'} alt="galleryApp" />
+                <h3>Gallery App</h3>
+              </Link>
+            </div>
+
+            <div className='card'>
               <Link className='links' to={"https://shopping-cart-yt.netlify.app/"} target={"_blank"}>
                 <img id='instaclone' src={window.location.origin + '/Instaclone.png'} alt="instaclone" />
                 <h3>Instaclone</h3>
               </Link>
             </div>
+            
 
           </div>
         </div>
