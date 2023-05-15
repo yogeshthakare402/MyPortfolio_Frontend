@@ -29,7 +29,7 @@ function Portfolio() {
 
             <div className='card'>
               <Link className='links' to={"https://real-estate-app-2.netlify.app/"} target={"_blank"}>
-                <img id='realestate2' src={window.location.origin + '/realestate.png'} alt="realestate" />
+                <img id='realestate2' src={window.location.origin + '/realestate2.png'} alt="realestate" />
                 <h3>Real Estate Project 2</h3>
               </Link>
             </div>
