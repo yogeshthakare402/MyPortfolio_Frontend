@@ -4,10 +4,13 @@
 }
 
 .skills-container {
-  max-width: 700px;
+  max-width: 1200px;
   margin: 0 auto;
   position: relative;
   z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
 .skills-filter {
@@ -192,6 +195,10 @@
 }
 
 @media (max-width: 768px) {
+  .skills-container {
+    grid-template-columns: 1fr;
+  }
+  
   .soft-skills-container {
     grid-template-columns: 1fr;
   }

@@ -104,11 +104,6 @@ export const data = {
     skills: {
       technical: [
         {
-          name: "JavaScript",
-          proficiency: 85,
-          category: "frontend",
-        },
-        {
           name: "React.js",
           proficiency: 80,
           category: "frontend",
@@ -159,13 +154,13 @@ export const data = {
           category: "frontend",
         },
         {
-          name: "TypeScript",
-          proficiency: 30,
+          name: "Javascript",
+          proficiency: 85,
           category: "languages",
         },
         {
-          name: "Javascript",
-          proficiency: 75,
+          name: "TypeScript",
+          proficiency: 30,
           category: "languages",
         },
         {
@@ -293,7 +288,7 @@ export const data = {
         image: "/realestate2.png",
         link: "https://real-estate-app-2.netlify.app/",
         github: "https://github.com/yogeshthakare402/Real-Estate-App-2",
-        featured: true,
+        featured: false,
       },
       {
         title: "E-Commerce Shopping Cart",
@@ -303,7 +298,7 @@ export const data = {
         image: "/Shopping_Cart.png",
         link: "https://shopping-cart-yt.netlify.app/",
         github: "https://github.com/yogeshthakare402/Shopping-Cart",
-        featured: true,
+        featured: false,
       },
       {
         title: "Recipe App",
@@ -313,7 +308,7 @@ export const data = {
         image: "/Recipe_App.png",
         link: "https://recipeapp-yogesh.netlify.app/",
         github: "https://github.com/yogeshthakare402/Recipe-App",
-        featured: true,
+        featured: false,
       },
     ],
   },
