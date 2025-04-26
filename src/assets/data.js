@@ -8,7 +8,7 @@ export const data = {
       greeting: "Hello, my name is",
       introduction: "I am a",
       description:
-        "Specializing in crafting intuitive user interfaces with a tech stack that includes HTML, CSS, JavaScript, React.js, React Native, Next.js, Node.js, Express.js, and MongoDB, with a primary focus on frontend development. Skilled in designing user interfaces and APIs, delivering smooth, user-friendly experiences using modern web technologies. Adept at utilizing GitHub for efficient source code management and collaboration, with a strong ability to adapt quickly and solve complex problems. Passionate about continuous learning and building innovative solutions that drive business success.",
+        "Specializing in building intuitive user interfaces with HTML, CSS, JavaScript, React.js, React Native, Next.js, Node.js, Express.js, and MongoDB, with a focus on frontend development. Skilled in designing user interfaces and collaborating through GitHub, with a strong ability to adapt and solve complex problems. Passionate about continuous learning and delivering innovative, user-friendly solutions.",
       profileImage: "/Yogesh_Thakare.png", // Update with LinkedIn profile photo
       ctaButton: {
         text: "More about me",

@@ -9,8 +9,7 @@ export default function Hero() {
     const typingRef = useRef(null)
 
     useEffect(() => {
-        // Update the roles array to remove "Mechanical Engineer" and add more software-focused roles
-        const roles = ["Full Stack Developer", "Software Engineer", "Problem Solver"]
+        const roles = ["Software Engineer", "Problem Solver"]
         let roleIndex = 0
         let charIndex = 0
         let isDeleting = false
