@@ -1,29 +1,79 @@
-import './App.css';
-// import CommonPage from './Components/CommonPage';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './Components/Home';
-import About from './Components/About';
-import Services from './Components/Services';
-import Portfolio from './Components/Portfolio';
-import Contact from './Components/Contact';
+import { useState, useEffect } from "react"
+import Header from "./Components/Header"
+import Gears from "./Components/Gears"
+import Hero from "./Components/Hero"
+import About from "./Components/About"
+import Skills from "./Components/Skills"
+import Portfolio from "./Components/Portfolio"
+import Contact from "./Components/Contact"
+import Footer from "./Components/Footer"
 
-function App() {
+export default function App() {
+  const [activeSection, setActiveSection] = useState("home")
+  const [isLoading, setIsLoading] = useState(true)
+
+  useEffect(() => {
+    // Simulate loading
+    setTimeout(() => {
+      setIsLoading(false)
+    }, 2500)
+
+    // Handle scroll for active section with better accuracy
+    const handleScroll = () => {
+      const sections = document.querySelectorAll("section")
+      const scrollPosition = window.scrollY + window.innerHeight / 3
+
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop
+        const sectionHeight = section.offsetHeight
+        const sectionId = section.getAttribute("id")
+
+        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+          setActiveSection(sectionId)
+        }
+      })
+    }
+
+    window.addEventListener("scroll", handleScroll)
+
+    // Trigger once on load to set the initial active section
+    handleScroll()
+
+    return () => window.removeEventListener("scroll", handleScroll)
+  }, [])
+
+  // Add a scroll to top function
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    })
+  }
+
+  if (isLoading) {
+    return (
+      <div className="loading-screen">
+        <div className="spinner"></div>
+        <h2>Initializing Engineering Portfolio</h2>
+      </div>
+    )
+  }
+
   return (
-    <div className="App">
-      <Router>
-        <Routes>
-         
-          <Route path='/' element={<Home/>}/>
-          <Route path='/about' element={<About/>}/>
-          <Route path='/services' element={<Services/>}/>
-          <Route path='/portfolio' element={<Portfolio/>}/>
-          <Route path='/contact' element={<Contact/>}/>
-          
-        </Routes>
-      </Router>
-      {/* </CommonPage> */}
+    <div className="app">
+      <Header activeSection={activeSection} />
+      <Gears />
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Portfolio />
+        <Contact />
+      </main>
+      <Footer />
+      <button className="scroll-to-top" onClick={scrollToTop}>
+        <span>↑</span>
+      </button>
     </div>
-  );
+  )
 }
-
-export default App;
