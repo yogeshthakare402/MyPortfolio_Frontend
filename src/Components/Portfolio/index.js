@@ -85,11 +85,6 @@ export default function Portfolio() {
                     <a href={project.link} target="_blank" rel="noopener noreferrer" className="btn view-btn">
                       Live Demo
                     </a>
-                    {project.github && (
-                      <a href={project.github} target="_blank" rel="noopener noreferrer" className="btn github-btn">
-                        GitHub
-                      </a>
-                    )}
                   </div>
                 </div>
               </div>

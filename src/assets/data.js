@@ -30,7 +30,7 @@ export const data = {
       city: "Mumbai",
       github: "https://github.com/yogeshthakare402",
       linkedin: "https://www.linkedin.com/in/eryogeshthakare/",
-      resumeUrl: "https://yogesh-d-thakare-portfolio.netlify.app/YogeshThakare.pdf",
+      resumeUrl: "https://yogesh-d-thakare-portfolio.netlify.app/YogeshThakareResume.pdf",
     },
     contact: {
       title: "Contact me",
@@ -245,8 +245,7 @@ export const data = {
           "In the Frankross Web Revamp project, I am working on the development of a completely new e-commerce website for Frankross, built using Next.js and Modular CSS. This revamp aligns with the latest market trends and business requirements to create a modern, high-performance, and user-friendly platform. My contributions include: UI/UX Implementation – Developing the new user interface based on the redesigned layout to enhance aesthetics and usability. Performance Optimization – Utilizing Next.js for server-side rendering and static site generation to improve speed and reliability. SEO Enhancement – Implementing SEO best practices such as optimized metadata, structured data, and improved page performance for better search visibility. Scalability & Maintainability – Using Modular CSS for better styling management and improved code maintainability. This revamp aims to deliver a seamless shopping experience while ensuring the platform is fast, reliable, and optimized for search engines.",
         technologies: ["Next.js", "Modular CSS", "SEO", "Performance Optimization", "UI/UX Implementation"],
         image: "/frankross.png",
-        link: "#",
-        github: "#",
+        link: "https://main.d20ay25s4v5ecu.amplifyapp.com/",
         featured: true,
       },
       {
@@ -254,9 +253,8 @@ export const data = {
         description:
           "In the Frankross Health App project, I was responsible for several key enhancements and integrations, including: Medicine Substitute Feature – Implemented functionality to suggest alternative medicines based on availability and composition. Cashfree Payment Integration – Integrated the Cashfree payment gateway to enable seamless transactions. Product Detail Page (PDP) UI Enhancements – Improved the user interface and experience for the PDP to ensure better usability and engagement. Slot Selection Page – Developed and optimized the slot selection feature for better appointment and order scheduling. Client-Specific Customizations – Addressed various client requirements by implementing requested features and modifications as per business needs. These contributions enhanced the app's functionality, user experience, and overall performance.",
         technologies: ["React Native", "CSS", "Payment Integration", "UI/UX", "API Integration"],
-        image: "/frankross.png",
-        link: "#",
-        github: "#",
+        image: "/frankross-app.png",
+        link: "https://play.google.com/store/apps/details?id=com.frankrosshealth",
         featured: true,
       },
       {
@@ -265,8 +263,7 @@ export const data = {
           "In the PharmEasy project, I worked on the PDP page, Diagnostics home page Revamp, focusing on enhancing the user experience and optimizing performance. My contributions included: UI/UX Enhancements – Implemented a modern and intuitive design to improve product visibility and user engagement. Performance Optimization – Improved page load times and responsiveness for a smoother browsing experience. Content Structuring – Optimized the layout and information hierarchy to present product details more effectively. SEO Improvements – Ensured SEO-friendly elements such as structured data, meta tags, and keyword optimization for better search rankings. These improvements contributed to a more user-friendly and efficient shopping experience on the platform.",
         technologies: ["Next.js", "Modules CSS", "UI/UX", "Performance Optimization", "SEO"],
         image: "/pharmeasy.png",
-        link: "https://pharmeasy.in/diagnostics/tests/complete-blood-count-cbc-408",
-        github: "#",
+        link: "https://pharmeasy.in",
         featured: true,
       },
       {
@@ -276,7 +273,6 @@ export const data = {
         technologies: ["React.js", "Emotion CSS", "Form Builder", "UI/UX", "Customization"],
         image: "/tinyform.png",
         link: "https://www.tinycommand.com/",
-        github: "#",
         featured: true,
       },
       {
@@ -286,7 +282,6 @@ export const data = {
         technologies: ["React.js", "Context API", "CSS3", "Local Storage"],
         image: "/Shopping_Cart.png",
         link: "https://shopping-cart-yt.netlify.app/",
-        github: "https://github.com/yogeshthakare402/Shopping-Cart",
         featured: false,
       },
       {
@@ -296,7 +291,6 @@ export const data = {
         technologies: ["React.js", "Redux", "Node.js", "Express", "MongoDB"],
         image: "/realestate2.png",
         link: "https://real-estate-app-2.netlify.app/",
-        github: "https://github.com/yogeshthakare402/Real-Estate-App-2",
         featured: false,
       },
       {
@@ -306,7 +300,6 @@ export const data = {
         technologies: ["React.js", "API Integration", "Responsive Design"],
         image: "/Recipe_App.png",
         link: "https://recipeapp-yogesh.netlify.app/",
-        github: "https://github.com/yogeshthakare402/Recipe-App",
         featured: false,
       },
     ],
