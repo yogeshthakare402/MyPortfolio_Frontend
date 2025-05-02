@@ -30,7 +30,7 @@ export const data = {
       city: "Mumbai",
       github: "https://github.com/yogeshthakare402",
       linkedin: "https://www.linkedin.com/in/eryogeshthakare/",
-      resumeUrl: "https://yogesh-d-thakare-portfolio.netlify.app/Yogesh_Devidas_Thakare-V7-2023.pdf",
+      resumeUrl: "https://yogesh-d-thakare-portfolio.netlify.app/YogeshThakare.pdf",
     },
     contact: {
       title: "Contact me",
