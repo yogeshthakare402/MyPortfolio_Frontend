@@ -12,8 +12,8 @@ export default function Skills() {
     { id: "all", name: "All Skills" },
     { id: "frontend", name: "Frontend" },
     { id: "backend", name: "Backend" },
-    { id: "tools", name: "Tools & DevOps" },
     { id: "languages", name: "Languages" },
+    { id: "tools", name: "Tools" },
   ]
 
   const filteredSkills =

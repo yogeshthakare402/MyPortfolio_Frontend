@@ -21,24 +21,13 @@ export default function Header({ activeSection }) {
 
     const handleNavClick = (e, sectionId) => {
         e.preventDefault()
-
-        // Close the mobile menu if open
         setMenuOpen(false)
-
-        // Find the section element
         const section = document.getElementById(sectionId)
 
         if (section) {
-            // Get the section's position relative to the viewport
             const sectionTop = section.getBoundingClientRect().top
-
-            // Get the current scroll position
             const scrollTop = window.pageYOffset || document.documentElement.scrollTop
-
-            // Calculate the target scroll position
             const targetScrollPosition = scrollTop + sectionTop
-
-            // Scroll to the section with smooth behavior
             window.scrollTo({
                 top: targetScrollPosition,
                 behavior: "smooth",

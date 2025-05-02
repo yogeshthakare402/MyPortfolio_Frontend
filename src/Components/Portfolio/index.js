@@ -41,6 +41,7 @@ export default function Portfolio() {
 
   // Get unique technologies from all projects
   const allTechnologies = [...new Set(portfolio.projects.flatMap((project) => project.technologies || []))]
+  console.log("allTechnologies", allTechnologies)
 
   return (
     <section id="portfolio" className="portfolio-section">
@@ -48,7 +49,6 @@ export default function Portfolio() {
         <div className="section-title">
           <h2>{portfolio.title}</h2>
           <div className="underline"></div>
-          <p>{portfolio.subtitle}</p>
         </div>
 
         <div className="portfolio-filters">

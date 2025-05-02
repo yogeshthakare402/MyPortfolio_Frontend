@@ -1,24 +1,21 @@
 import { useState, useEffect } from "react"
 import Header from "./Components/Header"
-import Gears from "./Components/Gears"
 import Hero from "./Components/Hero"
 import About from "./Components/About"
 import Skills from "./Components/Skills"
 import Portfolio from "./Components/Portfolio"
 import Contact from "./Components/Contact"
 import Footer from "./Components/Footer"
+import "./App.css"
 
 export default function App() {
   const [activeSection, setActiveSection] = useState("home")
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
-    // Simulate loading
     setTimeout(() => {
       setIsLoading(false)
     }, 2500)
-
-    // Handle scroll for active section with better accuracy
     const handleScroll = () => {
       const sections = document.querySelectorAll("section")
       const scrollPosition = window.scrollY + window.innerHeight / 3
@@ -34,15 +31,11 @@ export default function App() {
       })
     }
 
-    window.addEventListener("scroll", handleScroll)
-
-    // Trigger once on load to set the initial active section
     handleScroll()
-
+    window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
 
-  // Add a scroll to top function
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -62,7 +55,6 @@ export default function App() {
   return (
     <div className="app">
       <Header activeSection={activeSection} />
-      <Gears />
       <main>
         <Hero />
         <About />

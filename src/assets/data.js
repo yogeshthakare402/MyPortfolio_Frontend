@@ -9,7 +9,7 @@ export const data = {
       introduction: "I am a",
       description:
         "Specializing in building intuitive user interfaces with HTML, CSS, JavaScript, React.js, React Native, Next.js, Node.js, Express.js, and MongoDB, with a focus on frontend development. Skilled in designing user interfaces and collaborating through GitHub, with a strong ability to adapt and solve complex problems. Passionate about continuous learning and delivering innovative, user-friendly solutions.",
-      profileImage: "/Yogesh_Thakare.png", // Update with LinkedIn profile photo
+      profileImage: "/Yogesh_Thakare.png",
       ctaButton: {
         text: "More about me",
         link: "#about",
@@ -60,13 +60,13 @@ export const data = {
           value: "eryogeshthakare",
           link: "https://www.linkedin.com/in/eryogeshthakare/",
         },
-        {
-          type: "github",
-          icon: "FaGithub",
-          title: "Check my GitHub",
-          value: "yogeshthakare402",
-          link: "https://github.com/yogeshthakare402",
-        },
+        // {
+        //   type: "github",
+        //   icon: "FaGithub",
+        //   title: "Check my GitHub",
+        //   value: "yogeshthakare402",
+        //   link: "https://github.com/yogeshthakare402",
+        // },
       ],
       emailService: {
         serviceId: "service_r7rsqwu",
@@ -233,7 +233,6 @@ export const data = {
         date: "December 2022",
         image: "/Yogesh_Thakare_FullStack_Certficate.png",
       },
-      // Add more certificates from LinkedIn
     ],
   },
   portfolio: {
@@ -261,6 +260,16 @@ export const data = {
         featured: true,
       },
       {
+        title: "PharmEasy Web Revamp",
+        description:
+          "In the PharmEasy project, I worked on the PDP page, Diagnostics home page Revamp, focusing on enhancing the user experience and optimizing performance. My contributions included: UI/UX Enhancements – Implemented a modern and intuitive design to improve product visibility and user engagement. Performance Optimization – Improved page load times and responsiveness for a smoother browsing experience. Content Structuring – Optimized the layout and information hierarchy to present product details more effectively. SEO Improvements – Ensured SEO-friendly elements such as structured data, meta tags, and keyword optimization for better search rankings. These improvements contributed to a more user-friendly and efficient shopping experience on the platform.",
+        technologies: ["Next.js", "Modules CSS", "UI/UX", "Performance Optimization", "SEO"],
+        image: "/pharmeasy.png",
+        link: "https://pharmeasy.in/diagnostics/tests/complete-blood-count-cbc-408",
+        github: "#",
+        featured: true,
+      },
+      {
         title: "TinyForms",
         description:
           "TinyForms is a key feature of the TinyCommand product by Instinct Innovations, designed to facilitate the creation of dynamic and customizable forms. This feature enables users to add various elements such as images, questions, and descriptions while configuring question settings based on different question types, including short text, long text, multiple-choice (MCQ), single-choice (SCQ), phone number, number, currency, and more. Each question type offers unique configuration options to enhance flexibility and usability. Additionally, TinyForms supports theming, allowing users to apply predefined themes to their forms or customize them to align with specific branding and design preferences. This ensures a seamless and visually appealing form experience tailored to individual needs.",
@@ -271,14 +280,14 @@ export const data = {
         featured: true,
       },
       {
-        title: "PharmEasy PDP Revamp",
+        title: "E-Commerce Shopping Cart",
         description:
-          "In the PharmEasy project, I worked on the Product Description Page (PDP) Revamp, focusing on enhancing the user experience and optimizing performance. My contributions included: UI/UX Enhancements – Implemented a modern and intuitive design to improve product visibility and user engagement. Performance Optimization – Improved page load times and responsiveness for a smoother browsing experience. Content Structuring – Optimized the layout and information hierarchy to present product details more effectively. SEO Improvements – Ensured SEO-friendly elements such as structured data, meta tags, and keyword optimization for better search rankings. These improvements contributed to a more user-friendly and efficient shopping experience on the platform.",
-        technologies: ["Next.js", "Modules CSS", "UI/UX", "Performance Optimization", "SEO"],
-        image: "/pharmeasy.png",
-        link: "https://pharmeasy.in/diagnostics/tests/complete-blood-count-cbc-408",
-        github: "#",
-        featured: true,
+          "A fully functional shopping cart system with product listings, cart management, and checkout process.",
+        technologies: ["React.js", "Context API", "CSS3", "Local Storage"],
+        image: "/Shopping_Cart.png",
+        link: "https://shopping-cart-yt.netlify.app/",
+        github: "https://github.com/yogeshthakare402/Shopping-Cart",
+        featured: false,
       },
       {
         title: "Real Estate Project",
@@ -288,16 +297,6 @@ export const data = {
         image: "/realestate2.png",
         link: "https://real-estate-app-2.netlify.app/",
         github: "https://github.com/yogeshthakare402/Real-Estate-App-2",
-        featured: false,
-      },
-      {
-        title: "E-Commerce Shopping Cart",
-        description:
-          "A fully functional shopping cart system with product listings, cart management, and checkout process.",
-        technologies: ["React.js", "Context API", "CSS3", "Local Storage"],
-        image: "/Shopping_Cart.png",
-        link: "https://shopping-cart-yt.netlify.app/",
-        github: "https://github.com/yogeshthakare402/Shopping-Cart",
         featured: false,
       },
       {

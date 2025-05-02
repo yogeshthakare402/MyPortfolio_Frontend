@@ -12,7 +12,7 @@
   .header.scrolled {
     background-color: #fff;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    padding: 15px 0;
+    padding: 6px 0;
   }
   
   .header-container {
@@ -40,6 +40,11 @@
     font-weight: 500;
     transition: var(--transition);
     position: relative;
+    color: var(--light-color);
+  }
+
+  .scrolled .nav-menu ul li a {
+    color: var(--dark-color);
   }
   
   .nav-menu ul li a::after {
@@ -72,9 +77,13 @@
     display: block;
     width: 25px;
     height: 3px;
-    background-color: var(--dark-color);
+    background-color: var(--primary-color);
     margin: 5px 0;
     transition: var(--transition);
+  }
+
+  .scrolled .hamburger span {
+    background-color: var(--dark-color);
   }
   
   @media (max-width: 768px) {
@@ -108,9 +117,21 @@
       transition: var(--transition);
       box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
     }
+
+    .nav-menu.active a{
+      color: var(--dark-color);
+    }
   
     .nav-menu.active {
       right: 0;
+      align-items: flex-start;
+      justify-content: flex-start;
+      padding: 16px;
+    }
+
+    .nav-menu.active ul li{
+      display: flex;
+      align-items: flex-start;
     }
   
     .nav-menu ul {

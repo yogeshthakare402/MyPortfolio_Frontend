@@ -1,5 +1,6 @@
 
-import { useState } from "react"
+import { useState } from "react";
+import emailjs from '@emailjs/browser'
 import { data } from "../../assets/data"
 import "./index.css"
 
@@ -29,21 +30,34 @@ export default function Contact() {
       isError: false,
       isSubmitting: true,
     })
-
-    // Simulate form submission
-    setTimeout(() => {
-      setFormStatus({
-        message: "Thank you! Your message has been sent successfully.",
-        isError: false,
-        isSubmitting: false,
+  
+    emailjs.send(
+      "service_sjrmk5c",
+      "template_u2709ao", //template key
+      formData,
+      "-T8P4aIDMvD59J7nJ" //public key
+    )
+      .then((response) => {
+        setFormStatus({
+          message: "Thank you! Your message has been sent successfully.",
+          isError: false,
+          isSubmitting: false,
+        })
+        setFormData({
+          user_name: "",
+          user_email: "",
+          subject: "",
+          message: "",
+        })
       })
-      setFormData({
-        user_name: "",
-        user_email: "",
-        subject: "",
-        message: "",
+      .catch((error) => {
+        setFormStatus({
+          message: "Oops! Something went wrong. Please try again.",
+          isError: true,
+          isSubmitting: false,
+        })
+        console.error("EmailJS Error:", error)
       })
-    }, 2000)
   }
 
   return (

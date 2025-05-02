@@ -256,37 +256,6 @@ section {
   }
 }
 
-.loading-screen h2 {
-  color: #fff;
-  font-size: 24px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  position: relative;
-}
-
-.loading-screen h2::after {
-  content: "";
-  position: absolute;
-  bottom: -10px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background-color: var(--primary-color);
-  animation: loading 2s infinite;
-}
-
-@keyframes loading {
-  0% {
-    width: 0;
-  }
-  50% {
-    width: 100%;
-  }
-  100% {
-    width: 0;
-  }
-}
-
 /* Gear Animation */
 .gear {
   position: absolute;

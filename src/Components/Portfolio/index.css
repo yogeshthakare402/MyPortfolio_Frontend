@@ -8,7 +8,7 @@
   justify-content: center;
   gap: 15px;
   margin-bottom: 30px;
-  flex-wrap: wrap;
+  margin-top: -20px;
 }
 
 .filter-btn {

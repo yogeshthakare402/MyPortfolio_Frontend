@@ -8,6 +8,7 @@ export default function Hero() {
     const { home } = personalInfo
     const typingRef = useRef(null)
 
+  //recursively deleting and adding string
     useEffect(() => {
         const roles = ["Software Engineer", "Problem Solver"]
         let roleIndex = 0
@@ -30,16 +31,14 @@ export default function Hero() {
 
             if (!isDeleting && charIndex === currentRole.length) {
                 isDeleting = true
-                typingSpeed = 1500 // Pause at the end
+                typingSpeed = 1500
             } else if (isDeleting && charIndex === 0) {
                 isDeleting = false
                 roleIndex = (roleIndex + 1) % roles.length
-                typingSpeed = 500 // Pause before typing next role
+                typingSpeed = 500
             }
-
             setTimeout(type, typingSpeed)
         }
-
         setTimeout(type, 1000)
     }, [])
 
@@ -50,7 +49,7 @@ export default function Hero() {
 
         if (section) {
             const sectionTop = section.getBoundingClientRect().top
-            const scrollTop = window.pageYOffset || document.documentElement.scrollTop
+            const scrollTop = window.scrollY || document.documentElement.scrollTop
             const targetScrollPosition = scrollTop + sectionTop
 
             window.scrollTo({
@@ -68,7 +67,7 @@ export default function Hero() {
                         <p className="greeting">{home.greeting}</p>
                         <h1 className="name">{personalInfo.name}</h1>
                         <div className="typing-container">
-                            <span>{home.introduction} </span>
+                            <span>{home.introduction}</span>
                             <span ref={typingRef} className="typing-text"></span>
                             <span className="cursor">|</span>
                         </div>
@@ -77,7 +76,7 @@ export default function Hero() {
                             <a href="#about" className="btn primary-btn" onClick={(e) => handleScrollToSection(e, "about")}>
                                 {home.ctaButton.text}
                             </a>
-                            <a href="#contact" className="btn secondary-btn" onClick={(e) => handleScrollToSection(e, "contact")}>
+                            <a href="#contact" className="btn primary-btn" onClick={(e) => handleScrollToSection(e, "contact")}>
                                 Contact Me
                             </a>
                         </div>
@@ -88,17 +87,8 @@ export default function Hero() {
                         </div>
                     </div>
                 </div>
-                <div className="scroll-down" onClick={(e) => handleScrollToSection(e, "about")}>
-                    <div className="mouse">
-                        <div className="wheel"></div>
-                    </div>
-                    <div>
-                        <span className="scroll-text">Scroll Down</span>
-                    </div>
-                </div>
             </div>
 
-            {/* Technical drawing lines */}
             <div className="technical-lines">
                 <div className="line line-1"></div>
                 <div className="line line-2"></div>
