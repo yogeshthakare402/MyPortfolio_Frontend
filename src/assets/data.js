@@ -30,7 +30,7 @@ export const data = {
       city: "Mumbai",
       github: "https://github.com/yogeshthakare402",
       linkedin: "https://www.linkedin.com/in/eryogeshthakare/",
-      resumeUrl: "https://yogesh-d-thakare-portfolio.netlify.app/YogeshThakareResume.pdf",
+      resumeUrl: "https://yogesh-d-thakare-portfolio.netlify.app/Yogesh_Thakare_2025.pdf",
     },
     contact: {
       title: "Contact me",
@@ -104,6 +104,16 @@ export const data = {
     skills: {
       technical: [
         {
+          name: "Javascript",
+          proficiency: 85,
+          category: "languages",
+        },
+        {
+          name: "TypeScript",
+          proficiency: 30,
+          category: "languages",
+        },
+        {
           name: "React.js",
           proficiency: 80,
           category: "frontend",
@@ -134,14 +144,14 @@ export const data = {
           category: "backend",
         },
         {
-          name: "RESTful APIs",
-          proficiency: 80,
-          category: "backend",
-        },
-        {
           name: "Git/GitHub",
           proficiency: 85,
           category: "tools",
+        },
+        {
+          name: "RESTful APIs",
+          proficiency: 80,
+          category: "backend",
         },
         {
           name: "Responsive Design",
@@ -150,22 +160,12 @@ export const data = {
         },
         {
           name: "Redux",
-          proficiency: 70,
+          proficiency: 20,
           category: "frontend",
         },
         {
-          name: "Javascript",
-          proficiency: 85,
-          category: "languages",
-        },
-        {
-          name: "TypeScript",
-          proficiency: 30,
-          category: "languages",
-        },
-        {
           name: "SQL",
-          proficiency: 60,
+          proficiency: 40,
           category: "backend",
         },
       ],
@@ -245,7 +245,7 @@ export const data = {
           "In the Frankross Web Revamp project, I am working on the development of a completely new e-commerce website for Frankross, built using Next.js and Modular CSS. This revamp aligns with the latest market trends and business requirements to create a modern, high-performance, and user-friendly platform. My contributions include: UI/UX Implementation – Developing the new user interface based on the redesigned layout to enhance aesthetics and usability. Performance Optimization – Utilizing Next.js for server-side rendering and static site generation to improve speed and reliability. SEO Enhancement – Implementing SEO best practices such as optimized metadata, structured data, and improved page performance for better search visibility. Scalability & Maintainability – Using Modular CSS for better styling management and improved code maintainability. This revamp aims to deliver a seamless shopping experience while ensuring the platform is fast, reliable, and optimized for search engines.",
         technologies: ["Next.js", "Modular CSS", "SEO", "Performance Optimization", "UI/UX Implementation"],
         image: "/frankross.png",
-        link: "https://main.d20ay25s4v5ecu.amplifyapp.com/",
+        link: "https://frankrosspharmacy.com/",
         featured: true,
       },
       {
@@ -291,15 +291,6 @@ export const data = {
         technologies: ["React.js", "Redux", "Node.js", "Express", "MongoDB"],
         image: "/realestate2.png",
         link: "https://real-estate-app-2.netlify.app/",
-        featured: false,
-      },
-      {
-        title: "Recipe App",
-        description:
-          "A recipe application allowing users to browse, search, and save cooking recipes with detailed instructions and ingredients.",
-        technologies: ["React.js", "API Integration", "Responsive Design"],
-        image: "/Recipe_App.png",
-        link: "https://recipeapp-yogesh.netlify.app/",
         featured: false,
       },
     ],
